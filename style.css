@@ -1,0 +1,13 @@
+:root{
+    --primary-color: #5a25eb;
+    --text-color: #1e293b;
+    --bg-color: #f8fafc;
+}
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    font-family: sans-serif;
+}
+h1{
+    color: var(--primary-color);
+}
