@@ -1,7 +1,7 @@
 :root{
     --primary-color: #5a25eb;
     --text-color: #1e293b;
-    --bg-color: #f8fafc;
+    --bg-color: #9fa0a0;
 }
 body{
     background-color: var(--bg-color);
