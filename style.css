@@ -10,7 +10,7 @@ main {
 :root{
     --primary-color: #5a25eb;
     --text-color: #1e293b;
-    --bg-color: #9fa0a0;
+    --bg-color: #e9e6e6;
 }
 nav ul {
     display:flex;
