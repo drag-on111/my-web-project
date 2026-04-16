@@ -1,51 +1,52 @@
-/* Запобігає непередбачуваним overflow при додаванні padding */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
-/* Відступи для кращого відображення контенту на мобільних  */
-main {
-  padding: 0 15px;
+html {
+  font-size: 16px;
+}
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+body {
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  font-family: sans-serif;
+}
+h1, h2, h3 {
+  font-family:'Times New Roman', Times, serif;
+  line-height: 1.2;
+}
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--primary-color);
+}
+figure{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: center;
+}
+figcaption{
+  background-color: #333;
+  color: white;
+  font-style: normal;
+  padding: 5px;
+  font-size: 0.9em;
+}
+a:focus,
+button:focus {
+  outline: 3px solid #696868;
+  outline-offset: 2px;
 }
 :root{
-    --primary-color: #5a25eb;
-    --text-color: #1e293b;
-    --bg-color: #e9e6e6;
+  --primary-color: #5a25eb;
+  --text-color: #1e293b;
+  --bg-color: #e9e6e6;
 }
-nav ul {
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-}
-@media(min-width:768px){
-    header{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav ul{
-        flex-direction: row;
-    }
-@media(min-width: 1200px){
-    main{
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-}
-}
-.projects-container {
-  display: grid;
-  /* auto-fit автоматично підлаштовує кількість колонок */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-body{
-    background-color: var(--bg-color);
-    color:var(--text-color);
-    font-family: sans-serif;
-}
-h1{
-    color: var(--primary-color);
+main{
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
